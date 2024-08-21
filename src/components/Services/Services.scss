@@ -1,0 +1,424 @@
+@import "../../App.scss";
+
+.Services {
+  background: linear-gradient(180deg, #621b5e, #270726, #0a0017, #0a0017, #02000b);
+  animation: gradientAnimation 15s ease infinite;
+  background-size: cover;
+  width: 100%;
+  height: auto; // Utilisez 100vh pour occuper toute la hauteur de l'écran
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+
+  .textContainer {
+    flex: 1;
+    align-self: flex-end;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    @include mobile {
+      align-self: center;
+      text-align: center;
+      flex-direction: column;
+    }
+
+    @include tablet {
+      align-self: center;
+      text-align: center;
+      flex-direction: column;
+    }
+
+    @include laptop {
+      align-self: flex-end;
+      text-align: left;
+      flex-direction: row;
+      gap: 30px;
+    }
+
+    @include desktop {
+      align-self: flex-end;
+      text-align: left;
+      flex-direction: row;
+      gap: 40px;
+    }
+
+    p {
+      color: white;
+      font-size: 15px;
+      font-weight: 200;
+
+      @include laptop {
+        font-size: 18px;
+      }
+
+      @include desktop {
+        font-size: 20px;
+      }
+    }
+
+    hr {
+      width: 500px;
+      border: none;
+      border: 0.5px solid #e6661f;
+
+      @include mobile {
+        width: 300px;
+      }
+
+      @include tablet {
+        width: 400px;
+      }
+
+      @include laptop {
+        width: 450px;
+      }
+
+      @include desktop {
+        width: 500px;
+      }
+    }
+  }
+
+  .titleContainer {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include mobile {
+      width: 100%;
+      margin-bottom: 8px;
+    }
+
+    @include tablet {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+
+    @include laptop {
+      width: 100%;
+      margin-bottom: 12px;
+    }
+
+    @include desktop {
+      width: 100%;
+      margin-bottom: 15px;
+    }
+
+    .title {
+      display: flex;
+      align-items: center;
+      gap: 50px;
+
+      @include mobile {
+        flex-direction: column;
+        text-align: center;
+        margin: 20px auto;
+        gap: 20px;
+      }
+
+      @include tablet {
+        flex-direction: column;
+        text-align: center;
+        margin: 20px auto;
+        gap: 20px;
+      }
+
+      @include laptop {
+        flex-direction: row;
+        text-align: left;
+        margin: 20px auto;
+        gap: 40px;
+      }
+
+      @include desktop {
+        flex-direction: row;
+        text-align: left;
+        margin: 20px auto;
+        gap: 50px;
+      }
+
+      img {
+        width: 300px;
+        height: 120px;
+        border-radius: 50px;
+        object-fit: cover;
+
+        @include mobile {
+          width:100% ;
+          
+        }
+
+        @include tablet {
+          width: 250px;
+          height: 70px;
+        }
+
+        @include laptop {
+          width: 280px;
+          height: 90px;
+        }
+
+        @include desktop {
+          width: 300px;
+          height: 120px;
+        }
+      }
+
+      h1 {
+        color: white;
+        font-size: 96px;
+        font-weight: 100;
+        text-decoration: underline;
+
+        @include mobile {
+          font-size: 36px;
+        }
+
+        @include tablet {
+          font-size: 46px;
+        }
+
+        @include laptop {
+          font-size: 56px;
+        }
+
+        @include desktop {
+          font-size: 66px;
+        }
+      }
+    }
+  }
+
+  .listContainer {
+    flex: 2;
+    display: flex;
+    max-width: 1566px;
+    margin: 0 auto;
+    gap: 20px;
+
+    @include mobile {
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      margin-top: 30px;
+    }
+
+    @include tablet {
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      margin-top: 40px;
+    }
+
+    @include laptop {
+      flex-direction: row;
+      gap: 10px;
+      margin-top: 40px;
+    }
+
+    @include desktop {
+      flex-direction: row;
+      gap: 25px;
+      margin-top: 40px;
+    }
+
+    .box {
+      width: calc(100% - 40px);
+      max-width: 100%;
+      padding: 20px;
+      border: 0.5px solid #e6661f;
+      border-radius: 5px;
+      display: flex;
+      flex-direction: column;
+      box-sizing: border-box;
+      justify-content: space-between;
+      align-items: center;      
+      text-align: center; 
+      transition: background-color 0.3s ease, color 0.3s ease;
+      margin-bottom: 60px;
+
+      &:hover {
+        background-color: lightgray;
+        color: black;
+      }
+
+      @include mobile {
+        width: calc(100% - 40px);
+        align-items: center;
+        padding: 20px;
+      }
+
+      @include tablet {
+        width: calc(100% - 40px);
+        align-items: center;
+        padding: 20px;
+      }
+
+      @include laptop {
+        width: calc(25% - 10px); 
+        align-items: center; 
+        padding: 12px
+      }
+
+      @include desktop {
+        width: calc(25% - 20px);
+        align-items: flex-start;
+        padding: 40px;
+      }
+
+      img {
+        width: 300px;
+        height: auto;
+        border-radius: 10px;
+        object-fit: cover;
+
+        @include mobile {
+          width: 100%;
+          
+        }
+
+        @include tablet {
+          width: 100%; 
+          margin: 0 auto; 
+          
+        }
+
+        @include laptop {
+          width: 280px;
+         
+        }
+
+        @include desktop {
+          width: 280px;
+          
+        }
+      }
+
+
+      h2 {
+        color: white;
+        font-size: 36px;
+        font-weight: 100;
+        text-align: center;
+
+        @include mobile {
+          font-size: 26px;
+        }
+
+        @include tablet {
+          font-size: 30px;
+        }
+
+        @include laptop {
+          font-size: 32px;
+        }
+
+        @include desktop {
+          font-size: 36px;
+        }
+      }
+
+      h3 {
+       
+        color: white;
+        font-size: 24px;
+        font-weight: 300;
+        text-align: center;
+        margin: 10px auto;
+
+        @include mobile {
+          font-size: 20px;
+          font-weight: 300;
+        }
+
+        @include tablet {
+          font-size: 22px;
+          font-weight: 300;
+        }
+
+        @include laptop {
+          font-size: 20px;
+        }
+
+        @include desktop {
+          font-size: 24px;
+          margin-top: 10px; 
+          text-align: center; 
+        }
+      }
+
+      p {
+        color: white;
+        margin: 10px auto;
+
+        @include mobile {
+          display: none;
+        }
+
+        @include tablet {
+          display: none;
+        }
+
+        @include laptop {
+          display: block;
+          font-size: 14px;
+        }
+
+        @include desktop {
+          display: block;
+          font-size: 16px;
+        }
+      }
+
+      button {
+        font-size: 16px;
+        font-weight: 00;
+        padding: 10px;
+        background-color: #e6661f;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+
+        &:hover {
+          background-color: #dfa586;
+          transform: scale(1.05);
+        }
+
+        @include mobile {
+          background-color: transparent;
+          border: 1px solid orange;
+          border-radius: 5px;
+          margin: 20px auto;
+          color: orange;
+          width: 50%;
+          padding: 5px;
+        }
+
+        @include tablet {
+          background-color: transparent;
+          border: 1px solid orange;
+          border-radius: 5px;
+          margin: 20px auto;
+          color: orange;
+          width: 70%;
+          padding: 5px;
+        }
+
+        @include laptop {
+          width: 80%;
+          padding: 10px;
+          margin: 20px auto;
+        }
+
+        @include desktop {
+          width: 100%;
+          padding: 15px;
+        }
+      }
+    }
+  }
+}

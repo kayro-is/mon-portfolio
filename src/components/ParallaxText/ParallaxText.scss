@@ -1,0 +1,73 @@
+@import '../../App.scss';
+
+.progress {
+    position: fixed;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background: var(--accent);
+    bottom: 100px;
+  }
+  .parallax {
+    overflow: hidden;
+    letter-spacing: -2px;
+    line-height: 0.8;
+    margin: 0;
+    white-space: nowrap;
+    display: flex;
+    flex-wrap: nowrap;
+  
+    @include mobile {
+      letter-spacing: -1px;
+      line-height: 1;
+    }
+  
+    @include tablet {
+      letter-spacing: -1.5px;
+      line-height: 0.9;
+    }
+  
+    @include desktop {
+      letter-spacing: -2px;
+      line-height: 0.8;
+    }
+  }
+  
+  .parallax .scroller {
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 64px;
+    display: flex;
+    white-space: nowrap;
+    flex-wrap: nowrap;
+    color: white;
+  
+    @include mobile {
+      font-size: 24px;
+    }
+  
+    @include tablet {
+      font-size: 48px;
+    }
+  
+    @include desktop {
+      font-size: 64px;
+    }
+  }
+  
+  .parallax span {
+    display: block;
+    margin-right: 30px;
+  
+    @include mobile {
+      margin-right: 10px;
+    }
+  
+    @include tablet {
+      margin-right: 20px;
+    }
+  
+    @include desktop {
+      margin-right: 30px;
+    }
+  }

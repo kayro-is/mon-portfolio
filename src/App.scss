@@ -1,0 +1,55 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:wght@400;500;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+
+  body {
+    background: url('../public/background2.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #0c0c1d;
+    height: 100vh;
+    overflow-x: hidden; // Ajoutez ceci
+    margin: 0;
+    padding: 0;
+
+
+  }
+  
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+
+
+@mixin mobile {
+  @media (max-width: 738px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: 738px) and (max-width: 1024px) {
+    @content;
+  }
+}
+@mixin laptop {
+  @media (min-width: 1025px) and (max-width: 1445px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: 1445px) {
+    @content;
+  }
+}
