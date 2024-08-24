@@ -16,7 +16,7 @@ const NavBar = () => {
         className='logo'
         whileHover={{ scale: 1.2 }}
       >
-        <img src="kayro4.webp" alt="Logo" />
+        <img src="kayrologo.png" alt="Logo" />
       </motion.a>
       <nav className={`navbar ${isOpen ? 'active' : ''}`}>
         <motion.a whileHover={{ scale: 1.2 }} href="#home">Accueil</motion.a>

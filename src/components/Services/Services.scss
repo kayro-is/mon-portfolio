@@ -1,7 +1,7 @@
 @import "../../App.scss";
 
 .Services {
-  background: linear-gradient(180deg, #621b5e, #270726, #0a0017, #0a0017, #02000b);
+  background: linear-gradient(180deg, #040a10,#285e80,  #223744, #9ac3d9, #6086a1,#040a10);
   animation: gradientAnimation 15s ease infinite;
   background-size: cover;
   width: 100%;
@@ -61,7 +61,7 @@
     hr {
       width: 500px;
       border: none;
-      border: 0.5px solid #e6661f;
+      border: 0.5px solid white;
 
       @include mobile {
         width: 300px;
@@ -229,7 +229,7 @@
       width: calc(100% - 40px);
       max-width: 100%;
       padding: 20px;
-      border: 0.5px solid #e6661f;
+      border: 0.5px solid white;
       border-radius: 5px;
       display: flex;
       flex-direction: column;
@@ -375,35 +375,36 @@
 
       button {
         font-size: 16px;
-        font-weight: 00;
+        font-weight: 600;
+        color: white;
         padding: 10px;
-        background-color: #e6661f;
+        background-color: #6086a1;
         border-radius: 5px;
         border: none;
         cursor: pointer;
         transition: background-color 0.3s ease, transform 0.3s ease;
 
         &:hover {
-          background-color: #dfa586;
+          background-color: #a8c6d6;
           transform: scale(1.05);
         }
 
         @include mobile {
           background-color: transparent;
-          border: 1px solid orange;
+          border: 2px solid #6086a1;
           border-radius: 5px;
           margin: 20px auto;
-          color: orange;
+          color: white;
           width: 50%;
           padding: 5px;
         }
 
         @include tablet {
           background-color: transparent;
-          border: 1px solid orange;
+          border: 1px solid #6086a1;
           border-radius: 5px;
           margin: 20px auto;
-          color: orange;
+          color: white;
           width: 70%;
           padding: 5px;
         }

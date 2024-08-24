@@ -5,11 +5,10 @@
   height: auto;
   margin: 10px auto;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   padding: 20px;
   gap: 20px;
-  background-size: cover;
   animation: gradientAnimation 15s ease infinite;
 
   @include mobile {
@@ -32,11 +31,7 @@
     gap: 40px;
   }
 
-  @include desktop {
-    flex-direction: row;
-    padding: 40px;
-    gap: 50px;
-  }
+
 
   .textContainer {
     flex: 1;
@@ -102,7 +97,7 @@
         transition: color 0.3s;
 
         &:hover {
-          color: #e6661f;
+          color: #a8c6d6;
         }
       }
     }
@@ -153,13 +148,13 @@
 
         &:focus {
           outline: none;
-          border-color: #e6661f;
+          border-color: #a8c6d6;
         }
       }
 
       button {
         padding: 15px;
-        background-color: #e6661f;
+        background-color: #6086a1;
         border: none;
         border-radius: 5px;
         cursor: pointer;
@@ -168,7 +163,7 @@
         transition: background-color 0.3s, transform 0.3s;
 
         &:hover {
-          background-color: #621b5e;
+          background-color: #a8c6d6;
           transform: scale(1.05);
         }
       }

@@ -5,8 +5,7 @@
   justify-content: flex-start;
   height: auto;
   padding: 20px;
-  background: linear-gradient(180deg,#02000b,#0c0c1d,#02000b,#0a0017,#270726,#621b5e );
-
+  background: linear-gradient(180deg, #5694b8, #9ac3d9, #285e80, #223744, #040a10);
 animation: gradientAnimation 15s ease infinite;
 background-size: cover;
 
@@ -81,7 +80,7 @@ background-size: cover;
     h2 {
       font-size: 32px;
       margin-bottom: 20px;
-      color: #e6661f;
+      color: #eee;
       text-align: center;
 
       @include mobile {
@@ -170,7 +169,7 @@ background-size: cover;
     h2 {
       font-size: 32px;
       margin-bottom: 10px;
-      color: #e6661f;
+      color: #eee;
 
       @include mobile {
         font-size: 32px;

@@ -43,7 +43,7 @@ const Services = () => {
         <div className="title">
           <img src="/bg2.webp" alt="" />
           <h1>
-            Mes <motion.b whileHover={{ color: '#e6661f' }}>Projets</motion.b>
+            Mes <motion.b whileHover={{ color: '#040a10' }}>Projets</motion.b>
           </h1>
         </div>
       </motion.div>

@@ -50,9 +50,7 @@ const Hero = () => {
         animate="animate"
         >
 
-            <motion.h1 variants={textVariants}>Hello 👋,
-            </motion.h1>
-            <motion.h1 variants={textVariants}>Développeur Front passionné par les technologies modernes</motion.h1>
+            <motion.h1 variants={textVariants}>Développeur Front-End : React, JavaScript , Next.js ... </motion.h1>
             <motion.img variants={textVariants} animate="scrollButton" src="/scroll.png" alt="" />
         </motion.div>
         </div>
