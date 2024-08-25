@@ -42,9 +42,19 @@ const Services = () => {
       <motion.div className="titleContainer" variants={variants}>
         <div className="title">
           <img src="/bg2.webp" alt="" />
-          <h1>
-            Mes <motion.b whileHover={{ color: '#040a10' }}>Projets</motion.b>
-          </h1>
+          <motion.h1
+            initial={{ backgroundPosition: "200% center" }}
+            animate={{ backgroundPosition: "0% center" }}
+            transition={{ duration: 2, repeat: Infinity, repeatType: "reverse" }}
+            style={{
+              background: "linear-gradient(270deg, #e66465, #9198e5)",
+              backgroundClip: "text",
+              color: "transparent",
+              backgroundSize: "200% 200%",
+            }}
+          >
+            Mes <motion.b >Projets</motion.b>
+          </motion.h1>
         </div>
       </motion.div>
       <motion.div 

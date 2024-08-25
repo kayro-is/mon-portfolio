@@ -11,7 +11,17 @@ const Competence = () => {
       whileInView={{opacity: 1, scale: 1}}
       transition={{type:"spring", stiffness:100, delay:0.2}}
       className="about-me">
-       <h2>À propos de moi</h2>
+       <motion.h2 
+         initial={{ backgroundPosition: "200% center" }}
+         animate={{ backgroundPosition: "0% center" }}
+         transition={{ duration: 2, repeat: Infinity, repeatType: "reverse" }}
+         style={{
+          background: "linear-gradient(270deg, #e66465, #9198e5)",
+           backgroundClip: "text",
+           color: "transparent",
+           backgroundSize: "200% 200%",
+         }}
+       >À propos de moi</motion.h2>
 <p>
   Salut ! Je suis Mehadi Khireddine, un développeur web passionné avec un fort intérêt pour la création de sites et d'applications web dynamiques et réactifs. Mon objectif principal est de concevoir des interfaces utilisateur fluides et engageantes.
 </p>
@@ -28,20 +38,52 @@ const Competence = () => {
       whileInView={{opacity: 1, scale: 1}}
       transition={{type:"spring", stiffness:100, delay:0.5}}
       className="skills">
-        <h2>Mes Compétences</h2>
+        <motion.h2
+          initial={{ backgroundPosition: "200% center" }}
+          animate={{ backgroundPosition: "0% center" }}
+          transition={{ duration: 2, repeat: Infinity, repeatType: "reverse" }}
+          style={{
+            background: "linear-gradient(270deg, #e66465, #9198e5)",
+            backgroundClip: "text",
+            color: "transparent",
+            backgroundSize: "200% 200%",
+          }}
+        >Mes Compétences</motion.h2>
         <p>Technologies avec lesquelles j'ai récemment travaillé</p>
-        <div className="logos">
+        <motion.div className="logos" >
         
-          <img src="/html.webp" alt="html" />
-          <img src="/css.webp" alt="css" />
-          <img src="/js.webp" alt="javascript" />
-          <img src="vercel.webp" alt="vercel" />
-          <img src="vscode.webp" alt="vscode" />
-          <img src="react.webp" alt="react" />
-          <img src="/next.webp" alt="next" />
+          <motion.img 
+          whileHover={{ scale: 1.2, rotate: 10 }}
+          transition={{ type: "spring", stiffness: 300 }}
+           src="/html.webp"  alt="html5" />
+          <motion.img 
+          whileHover={{ scale: 1.2, rotate: 10 }}
+          transition={{ type: "spring", stiffness: 300 }}
+           src="/css.webp" alt="css" />
+          <motion.img 
+          whileHover={{ scale: 1.2, rotate: 10 }}
+          transition={{ type: "spring", stiffness: 300 }}
+           src="/js.webp" alt="javascript" />
+          <motion.img 
+          whileHover={{ scale: 1.2, rotate: 10 }}
+          transition={{ type: "spring", stiffness: 300 }}
+           src="vercel.webp" alt="vercel" />
+          <motion.img 
+          whileHover={{ scale: 1.2, rotate: 10 }}
+          transition={{ type: "spring", stiffness: 300 }}
+           src="vscode.webp" alt="vscode" />
+          <motion.img 
+          whileHover={{ scale: 1.2, rotate: 10 }}
+          transition={{ type: "spring", stiffness: 300 }}
+           src="react.webp" alt="react" />
+          <motion.img 
+          whileHover={{ scale: 1.2, rotate: 10 }}
+          transition={{ type: "spring", stiffness: 300 }}
+           src="/next.webp" alt="next" />
           
-        </div>
+        </motion.div>
       </motion.div>
+      
     </div>
   );
 };

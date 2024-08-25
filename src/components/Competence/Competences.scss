@@ -5,7 +5,7 @@
   justify-content: flex-start;
   height: auto;
   padding: 20px;
-  background: linear-gradient(180deg, #5694b8, #9ac3d9, #285e80, #223744, #040a10);
+  background: linear-gradient(180deg, #5694b8,  #223744, #040a10);
 animation: gradientAnimation 15s ease infinite;
 background-size: cover;
 
@@ -48,7 +48,10 @@ background-size: cover;
     height: auto;
     padding: 20px;
     margin-bottom: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+   // box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+   border-radius: 20px;
+   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1), 0px 0px 20px rgba(0, 162, 255, 0.5);
+   padding: 20px;
 
     @include mobile {
       width: 100%;
@@ -136,7 +139,9 @@ background-size: cover;
     border-radius: 10px;
     height: auto;
     padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1), 0px 0px 20px rgba(0, 162, 255, 0.5);
+    padding: 20px;
     text-align: center;
 
     @include mobile {
@@ -217,7 +222,12 @@ background-size: cover;
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      gap: 10px;
+      gap: 25px;
+      
+      .logos:hover {
+        transform: scale(1.2);
+        transition: transform 0.3s ease-in-out;
+      }
 
       @include mobile {
         gap: 10px;
@@ -231,13 +241,17 @@ background-size: cover;
         gap: 20px;
       }
 
-      @include desktop {
-        gap: 25px;
-      }
+    
 
       img {
         width: 80px;
         height: auto;
+
+        img:hover {
+
+          transform: scale(1.2);
+          transition: transform 0.3s ease-in-out;
+        }
 
         @include mobile {
           width: 160px;

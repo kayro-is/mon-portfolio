@@ -44,7 +44,17 @@ const Contact = () => {
         animate={{ opacity: 1, x: 0 }} 
         transition={{ duration: 1 }}
       >
-        <h1>Contact</h1>
+        <motion.h1
+          initial={{ backgroundPosition: "200% center" }}
+          animate={{ backgroundPosition: "0% center" }}
+          transition={{ duration: 2, repeat: Infinity, repeatType: "reverse" }}
+          style={{
+            background: "linear-gradient(270deg, #e66465, #9198e5)",
+            backgroundClip: "text",
+            color: "transparent",
+            backgroundSize: "200% 200%",
+          }}
+        >Contact</motion.h1>
         <div className="item">
           <h2>Email</h2>
           <span><CiMail /> mehadi.webdev@gmail.com</span>
