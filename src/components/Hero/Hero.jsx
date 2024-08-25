@@ -51,8 +51,8 @@ const Hero = () => {
         >
 
             <motion.h1 variants={textVariants}>Développeur Front-End : React, JavaScript , Next.js ... </motion.h1>
-            <motion.img variants={textVariants} animate="scrollButton" src="/scroll.png" alt="" />
         </motion.div>
+        <motion.img variants={textVariants} animate="scrollButton" src="/scroll.png" alt="" />
         </div>
         <motion.div className="slidingTextContainer" variants={sliderVariants} initial="initial" animate="animate" >
         Kayro webdev
