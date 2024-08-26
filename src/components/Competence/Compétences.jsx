@@ -15,6 +15,7 @@ const Competence = () => {
          initial={{ backgroundPosition: "200% center" }}
          animate={{ backgroundPosition: "0% center" }}
          transition={{ duration: 2, repeat: Infinity, repeatType: "reverse" }}
+         
          style={{
           background: "linear-gradient(270deg, #e66465, #9198e5)",
            backgroundClip: "text",

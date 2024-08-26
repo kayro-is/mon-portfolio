@@ -65,7 +65,7 @@ const Services = () => {
           href="https://kayro-shop.vercel.app/" 
           target="_blank" 
           rel="noopener noreferrer" 
-          whileHover={{ background: '#15263b', color: 'black', scale: 1.1 }}
+          whileHover={{ background: '#5694b8', color: 'black', scale: 1.1 }}
           transition={{ delay: 0.1}}
         >
             <h3>Kayro Shop</h3>
@@ -84,7 +84,7 @@ const Services = () => {
           href="https://668930ad40420c0008e08dfa--mondeanimaldishaaq.netlify.app/" 
           target="_blank" 
           rel="noopener noreferrer" 
-          whileHover={{ background: '#15263b', color: 'black', scale: 1.1 }}
+          whileHover={{ background: '#5694b8', color: 'black', scale: 1.1 }}
           transition={{ delay: 0.1}}
         >
         <h3>Monde Animal d'Ishaaq</h3>
@@ -101,7 +101,7 @@ const Services = () => {
           href="https://www.halal-meat-quality.com/" 
           target="_blank" 
           rel="noopener noreferrer" 
-          whileHover={{ background: '#15263b', color: 'black', scale: 1.1 }}
+          whileHover={{ background: '#5694b8', color: 'black', scale: 1.1 }}
           transition={{ delay: 0.1}}
         >
         <h3>Halal Meat Quality</h3>
@@ -118,7 +118,7 @@ const Services = () => {
           href="https://fruits-shop-kohl.vercel.app/" 
           target="_blank" 
           rel="noopener noreferrer" 
-          whileHover={{ background: '#15263b', color: 'black', scale: 1.1 }}
+          whileHover={{ background: '#5694b8', color: 'black', scale: 1.1 }}
           transition={{ delay: 0.1}}
         >
         <h3>Fruits Shope</h3>

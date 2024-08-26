@@ -84,9 +84,9 @@
         }
   
         @include mobile {
-          font-size: 14px;
+          font-size: 15px;
           margin-left: 0;
-          margin-bottom: 20px;
+          margin-bottom: 9px;
         }
   
         @include tablet {
@@ -161,6 +161,14 @@
       display: flex;
       gap: 20px;
       color: #eee;
+
+      .social,a {
+        &:hover {
+          color: #e66465;
+        }
+      }
+
+     
     
   }
   }
