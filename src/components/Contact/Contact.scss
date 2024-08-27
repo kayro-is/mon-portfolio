@@ -97,7 +97,7 @@
         transition: color 0.3s;
 
         &:hover {
-          color: #e66465;
+          color: #59f1fb;
         }
       }
     }
@@ -148,7 +148,7 @@
 
         &:focus {
           outline: none;
-          border-color: #a8c6d6;
+          border-color: #59f1fb;
         }
       }
 
@@ -163,7 +163,7 @@
         transition: background-color 0.3s, transform 0.3s;
 
         &:hover {
-          background-color: #e66465;
+          background-color: #621b5e;
           transform: scale(1.05);
         }
       }

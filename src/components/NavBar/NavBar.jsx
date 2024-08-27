@@ -18,7 +18,7 @@ const NavBar = () => {
         className='logo'
         whileHover={{ scale: 1.2 }}
       >
-        <img src="kayrologo.png" alt="Logo" />
+        <img src="kayrologo.webp" alt="Logo" />
       </motion.a>
 
       <div className="social">

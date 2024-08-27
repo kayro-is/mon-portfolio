@@ -1,3 +1,4 @@
+
 import "./Competences.scss";
 import { motion } from "framer-motion";
 
@@ -24,14 +25,17 @@ const Competence = () => {
          }}
        >À propos de moi</motion.h2>
 <p>
-  Salut ! Je suis Mehadi Khireddine, un développeur web passionné avec un fort intérêt pour la création de sites et d'applications web dynamiques et réactifs. Mon objectif principal est de concevoir des interfaces utilisateur fluides et engageantes.
+  Salut ! Je m'appelle Mehadi Khireddine, développeur web passionné et toujours en quête de nouveaux défis. Mon expertise réside dans la création de sites et d'applications web modernes, alliant performance et esthétique. 
+  J'accorde une importance particulière à l'expérience utilisateur, cherchant à offrir des interfaces intuitives et agréables.
 </p>
 <p>
-  En tant que développeur, je me tiens constamment informé des dernières technologies et pratiques du domaine pour améliorer mes compétences et la qualité de mes projets. Mon enthousiasme pour le développement web me pousse à être à l'avant-garde des tendances et à m'adapter aux évolutions du marché.
-</p>
+Je suis constamment à l'affût des dernières tendances technologiques pour rester à jour et enrichir mes compétences.
+ Mon approche du développement web est centrée sur l'innovation et l'amélioration continue, 
+ ce qui me permet de livrer des projets de qualité, adaptés aux besoins actuels du marché.</p>
 <p>
-  En dehors de mon travail, je suis un curieux de la technologie, toujours prêt à découvrir de nouvelles innovations. J'aime également lire sur les avancées techniques, pratiquer du sport et savourer les plaisirs de la vie. Je suis ouvert aux collaborations sur des projets créatifs et ambitieux.
-</p>
+En dehors de mon métier, je suis un fervent amateur de technologie, curieux des nouvelles tendances et des progrès dans le domaine.
+ J'apprécie également le sport et les moments de détente qui me permettent de garder un bon équilibre entre vie professionnelle et personnelle. 
+Je suis toujours ouvert aux collaborations enrichissantes et aux projets ambitieux qui repoussent les limites de la créativité.</p>
       </motion.div>
 
       <motion.div  
@@ -81,10 +85,23 @@ const Competence = () => {
           whileHover={{ scale: 1.2, rotate: 10 }}
           transition={{ type: "spring", stiffness: 300 }}
            src="/next.webp" alt="next" />
-          
         </motion.div>
+        <motion.div
+  style={{ marginTop: "20px" }}
+  whileHover={{ scale: 1.1 }}
+  transition={{ type: "spring", stiffness: 300 }}
+>
+  <a
+    href="/CVDEV.WEB.pdf"
+    download="Mehadi_Khireddine_CV.pdf"
+    className="btn-cv"
+  >
+    Télécharger mon CV
+  </a>
+</motion.div>
       </motion.div>
-      
+
+
     </div>
   );
 };
