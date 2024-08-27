@@ -41,13 +41,13 @@ a {
   }
 }
 @mixin laptop {
-  @media (min-width: 1025px) and (max-width: 1445px) {
+  @media (min-width: 1025px) and (max-width: 1527px) {
     @content;
   }
 }
 
 @mixin desktop {
-  @media (min-width: 1445px) {
+  @media (min-width: 1527px) {
     @content;
   }
 }
