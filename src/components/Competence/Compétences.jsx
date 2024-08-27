@@ -13,9 +13,11 @@ const Competence = () => {
       transition={{type:"spring", stiffness:100, delay:0.2}}
       className="about-me">
        <motion.h2 
+       whileHover={{ scale: 1.1, rotate: 3 }}
+       transition={{ type: "spring", stiffness: 300 }}
          initial={{ backgroundPosition: "200% center" }}
          animate={{ backgroundPosition: "0% center" }}
-         transition={{ duration: 2, repeat: Infinity, repeatType: "reverse" }}
+     //    transition={{ duration: 2, repeat: Infinity, repeatType: "reverse" }}
          
          style={{
           background: "linear-gradient(270deg, #e66465, #9198e5)",
@@ -44,9 +46,11 @@ Je suis toujours ouvert aux collaborations enrichissantes et aux projets ambitie
       transition={{type:"spring", stiffness:100, delay:0.5}}
       className="skills">
         <motion.h2
+        whileHover={{ scale: 1.1, rotate: 3 }}
+        transition={{ type: "spring", stiffness: 200 }}
           initial={{ backgroundPosition: "200% center" }}
           animate={{ backgroundPosition: "0% center" }}
-          transition={{ duration: 2, repeat: Infinity, repeatType: "reverse" }}
+         // transition={{ duration: 2, repeat: Infinity, repeatType: "reverse" }}
           style={{
             background: "linear-gradient(270deg, #e66465, #9198e5)",
             backgroundClip: "text",

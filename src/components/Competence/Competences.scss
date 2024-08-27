@@ -68,10 +68,9 @@ background-size: cover;
     }
 
     @include laptop {
-      width: 45%;
-      margin-top: 0;
+      width: 54%;
       height: auto;
-      padding: 30px;
+      padding: 30px auto;
     }
 
     @include desktop {
@@ -157,9 +156,9 @@ background-size: cover;
     }
 
     @include laptop {
-      width: 45%;
+      width: 42%;
       padding: 30px;
-      height: 70vh;
+      height: 80vh;
       margin-top: 0;
     }
 

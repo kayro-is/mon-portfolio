@@ -37,16 +37,18 @@
           align-items: center;
           text-align: center;
           padding: 20px;
-          margin-top: 200px ;
+          margin-top: 250px ;
+          
         }
   
         @include tablet {
           height: auto;
-          width: 100%;
+          width: 60%;
           gap: 15px;
           align-items: center;
           text-align: center;
           padding: 20px;
+          margin: auto;
         }
   
        

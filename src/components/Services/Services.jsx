@@ -41,7 +41,10 @@ const Services = () => {
       </motion.div>
       <motion.div className="titleContainer" variants={variants}>
         <div className="title">
-          <img src="/bg2.webp" alt="" />
+          <motion.img 
+           whileHover={{ scale: 1.1, rotate: 5 }}
+           transition={{ type: "spring", stiffness: 300 }}
+           src="/bg2.webp" alt="" />
           <motion.h1
             initial={{ backgroundPosition: "200% center" }}
             animate={{ backgroundPosition: "0% center" }}
@@ -53,7 +56,8 @@ const Services = () => {
               backgroundSize: "200% 200%",
             }}
           >
-            Mes <motion.b >Projets</motion.b>
+            Mes <motion.b 
+            >Projets</motion.b>
           </motion.h1>
         </div>
       </motion.div>
