@@ -33,6 +33,18 @@
       "react-app/jest"
     ]
   },
+  "headers": [
+    {
+      "source": "/sitemap.xml",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "application/xml"
+        }
+      ]
+    }
+  ],
+
   "browserslist": {
     "production": [
       ">0.2%",
@@ -44,5 +56,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+    
   }
 }
