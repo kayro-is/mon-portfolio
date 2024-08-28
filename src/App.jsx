@@ -1,4 +1,5 @@
 import React from 'react';
+import { SpeedInsights } from "@vercel/speed-insights/react"
 import NavBar from './components/NavBar/NavBar';
 import Hero from './components/Hero/Hero';
 import Scroll from './components/Scroll';
@@ -25,6 +26,7 @@ const App = () => {
       <section id="contact">
         <Contact />
       </section>
+      <SpeedInsights />
     </div>
   );
 }
