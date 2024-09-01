@@ -2,28 +2,66 @@
 <html lang="fr">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="/kayrologo.webp" type="image/webp"/>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <!-- Favicon -->
+    <link rel="icon" href="/kayrologo.webp" type="image/webp" />
+    
+    <!-- Polices Google -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Balises Meta SEO -->
     <meta name="keywords" content="KayroWeb, développeur web, React, JavaScript, Next.js, portfolio, création de sites web" />
-    <meta name="description" content="KayroWeb - Développeur web spécialisé dans la création de sites modernes, réactifs et optimisés. Découvrez mes compétences en React, JavaScript, et plus encore.">
+    <meta name="description" content="KayroWeb - Développeur web spécialisé dans la création de sites modernes, réactifs et optimisés. Découvrez mes compétences en React, JavaScript, et plus encore." />
+    
+    <!-- Open Graph pour les Réseaux Sociaux -->
     <meta property="og:title" content="KayroWeb - Développeur Web" />
     <meta property="og:description" content="Découvrez mon portfolio et mes compétences en développement web." />
     <meta property="og:image" content="https://www.kayroweb.com/kayrologo.webp" />
     <meta property="og:url" content="https://www.kayroweb.com/" />
     <meta property="og:type" content="website" />
+    
+    <!-- Canonical URL -->
     <link rel="canonical" href="https://www.kayroweb.com" />
+    
+    <!-- Content Security Policy -->
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; frame-src 'none'; object-src 'none'; base-uri 'self'; form-action 'self';">
 
+    <!-- Données Structurées (Schema.org) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "url": "https://www.kayroweb.com",
+      "name": "KayroWeb",
+      "description": "Développeur web spécialisé dans la création de sites modernes, réactifs et optimisés.",
+      "sameAs": [
+        "https://www.linkedin.com/in/mehadi-khireddine",
+        "https://github.com/mehadikhireddine"
+      ],
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://www.kayroweb.com/?s={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
 
-   
-    <title>KayroWeb</title>
+    <!-- Titre de la Page -->
+    <title>Kayro Web - Développement Web & Mobile | React, Next.js, JavaScript</title>
+
+    <!-- Préchargement des Polices -->
+    <link rel="preload" href="/fonts/poppins.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+
+    <!-- Manifest pour Progressive Web App (PWA) -->
+    <link rel="manifest" href="/manifest.json" />
   </head>
-  <body>
   
+  <body>
+    <!-- Contenu Principal -->
     <div id="root"></div>
-    <script type="module" src="/src/index.js"></script>
- 
-
+    
+    <!-- Script Principal -->
+    <script type="module" src="/src/index.js" async></script>
   </body>
 </html>

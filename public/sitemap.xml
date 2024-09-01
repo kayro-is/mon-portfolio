@@ -8,18 +8,29 @@
 <url>
   <loc>https://www.kayroweb.com/</loc>
   <lastmod>2024-08-27T11:59:08+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>1.0</priority>
 </url>
+
 <url>
   <loc>https://www.kayroweb.com/compétence</loc>
   <lastmod>2024-08-27T11:59:08+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
 </url>
+
 <url>
-  <loc>https://www.kayroweb.com/Projet</loc>
+  <loc>https://www.kayroweb.com/projet</loc>
   <lastmod>2024-08-27T11:59:08+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
 </url>
+
 <url>
   <loc>https://www.kayroweb.com/contact</loc>
   <lastmod>2024-08-27T11:59:08+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.5</priority>
 </url>
 
 </urlset>
