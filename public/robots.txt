@@ -1,4 +1,9 @@
+
 # https://www.robotstxt.org/robotstxt.html
 User-agent: *
-Disallow:
+Disallow: /admin/
+Disallow: /login/
+Disallow: /test/
+Disallow: /tmp/
+Allow: /public/
 Sitemap: https://www.kayroweb.com/sitemap.xml
