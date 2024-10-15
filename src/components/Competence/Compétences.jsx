@@ -96,7 +96,7 @@ Je suis toujours ouvert aux collaborations enrichissantes et aux projets ambitie
   transition={{ type: "spring", stiffness: 300 }}
 >
   <a
-    href="/CVDEV.WEB.pdf"
+    href="/MehadiKhireddine.pdf"
     download="Mehadi_Khireddine_CV.pdf"
     className="btn-cv"
   >
