@@ -66,6 +66,29 @@ const Services = () => {
       className="listContainer" variants={variants}>
         <motion.a 
           className="box" 
+          href="https://www.doniacoachlife.com/" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          whileHover={{ background: '#5694b8', color: 'black', scale: 1.1 }}
+          transition={{ delay: 0.1}}
+        >
+            <h3>doniacoachlife</h3>
+          <img src="/doniacoachlife.jpg" alt="" />
+          <br />
+          <p>
+          🌟 Découvrez le projet "Donia CoachLife" ! 🌟
+       Je suis fier de vous présenter un projet sur lequel j'ai travaillé avec passion pour ma cliente : le site "Donia CoachLife".
+     Ce projet a été conçu pour refléter l'esprit du coaching de vie et de développement personnel, 🖥️✨
+
+
+
+
+Je suis ravi du résultat final et de la satisfaction de ma cliente ! 🏆
+          </p>
+          <button>Go</button>
+        </motion.a>
+        <motion.a 
+          className="box" 
           href="https://kayro-shop.vercel.app/" 
           target="_blank" 
           rel="noopener noreferrer" 
