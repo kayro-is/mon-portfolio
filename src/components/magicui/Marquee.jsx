@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 
 const reviews = [
-  { name: "Donia", username: "@donia.coachlife", body: "Je suis très satisfaite du résultat final du site web pour Donia Coach Life ! Le site est magnifique, rapide et correspond parfaitement à mes attentes. La collaboration a été extrêmement fluide grâce au professionnalisme de Khireddine. Il a su comprendre mes besoins et les traduire en un site qui reflète exactement l'image de mon activité. De plus, le projet a été terminé dans les délais, avec une grande réactivité et attention aux détails. Merci pour ce superbe travail !" },
+  { name: "Donia", username: "@donia.coachlife", body: "Je suis très satisfaite du résultat final du site web pour Donia Coach Life ! Le site est magnifique, rapide et correspond parfaitement à mes attentes. La collaboration a été extrêmement fluide grâce au professionnalisme de Khireddine. Il a su comprendre mes besoins et les traduire en un site qui reflète exactement l'image de mon activité. De plus, le projet a été terminé dans les délais, avec une grande réactivité et attention aux détails. Merci pour ce superbe travail 😊!" },
   { name: "Yassine", username: "@Halal-meat-quality", body: "Très satisfait du site créé  ! Beau design, rapide et bien pensé. Un travail professionnel et efficace , merci" },
   { name: "Ishaaq", username: "@Ishaaq", body: "Merci pour ce superbe travail." },
 
@@ -21,16 +21,16 @@ const ReviewCard = ({ name, username, body }) => (
       display: 'flex',
       flexDirection: 'column',
       justifyContent: 'space-between',
-      backgroundColor: 'white',
+      backgroundColor: '#14111d',
       boxShadow: '0 4px 10px rgba(0, 0, 0, 0.1)',
       overflowWrap: 'break-word',
       whiteSpace: 'normal',
      
     }}
   >
-    <h3 style={{ fontSize: '1.5rem', marginBottom: '8px' }}>{name}</h3>
-    <span style={{ color: 'gray', fontSize: '1.2rem' }}>{username}</span>
-    <p style={{ fontSize: '1.1rem', marginTop: '12px' }}>{body}</p>
+    <h3 style={{ fontSize: '2.5rem',color:'#9198e5', marginBottom: '8px' }}>{name}</h3>
+    <span style={{ color: 'gray',color:'white', fontSize: '1.2rem' }}>{username}</span>
+    <p style={{ fontSize: '1.1rem',color:'white', marginTop: '12px' }}>{body}</p>
   </div>
 );
 

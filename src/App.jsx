@@ -6,7 +6,9 @@ import Scroll from './components/Scroll';
 import Competence from './components/Competence/Compétences';
 import Contact from './components/Contact/Contact';
 import Services from './components/Services/Services';
-import Marquee  from "./components/magicui/Marquee"
+import Marquee  from "./components/magicui/Marquee";
+import Copyright from "./components/copyright/copyright";
+
 
 
 
@@ -31,13 +33,14 @@ const App = () => {
       <section id="services">
         <Services />
       </section>
-     
+      <Scroll />
         <Marquee />
       
       <Scroll />
       <section id="contact">
         <Contact />
       </section>
+      <Copyright />
       <SpeedInsights />
     </div>
   );
