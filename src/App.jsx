@@ -12,12 +12,6 @@ import Copyright from "./components/copyright/copyright";
 
 
 
-
-
-
-
-
-
 const App = () => {
   return (
     <div>
@@ -35,7 +29,6 @@ const App = () => {
       </section>
       <Scroll />
         <Marquee />
-      
       <Scroll />
       <section id="contact">
         <Contact />
