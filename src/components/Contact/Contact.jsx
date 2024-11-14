@@ -55,14 +55,20 @@ const Contact = () => {
             backgroundSize: "200% 200%",
           }}
         >Contact</motion.h1>
-        <div className="item">
-          <h2>Email</h2>
-          <span><CiMail /> mehadi.webdev@gmail.com</span>
-        </div>
-        <div className="item">
-          <h2>Téléphone</h2>
-          <span><FaPhone /> 06 64 51 11 31</span>
-        </div>
+      <div className="item">
+  <h2>Email</h2>
+  <span>
+    <CiMail className="icon-space"/>
+    <a href="mailto:mehadi.webdev@gmail.com">mehadi.webdev@gmail.com</a>
+  </span>
+</div>
+<div className="item">
+  <h2>Téléphone</h2>
+  <span>
+    <FaPhone className="icon-space" />
+    <a href="tel:+33664511131">06 64 51 11 31</a>
+  </span>
+</div>
         <div className="socialLinks">
           <motion.a href="https://www.linkedin.com/in/khireddine-mehadi-6447402a6/" target="_blank" rel="noopener noreferrer" whileHover={{ scale: 1.5 }} ><FaLinkedin /></motion.a>
           <motion.a href="https://github.com/kayro-is?tab=overview&from=2024-08-01&to=2024-08-12" target="_blank" rel="noopener noreferrer"whileHover={{ scale: 1.5 }}><FaGithub /></motion.a>

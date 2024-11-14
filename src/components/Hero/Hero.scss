@@ -50,6 +50,24 @@
           padding: 20px;
           margin: auto;
         }
+        @include laptop {
+          height: auto;
+          width: 60%;
+          gap: 15px;
+          align-items: center;
+          text-align: center;
+          padding: 20px;
+          margin: auto;
+        }
+        @include desktop {
+          height: auto;
+          width: 60%;
+          gap: 15px;
+          align-items: center;
+          text-align: center;
+          padding: 20px;
+          margin: auto;
+        }
   
        
   
@@ -91,8 +109,11 @@
           }
         }
   
-        img {
+        .scroll-img {
           width: 50px;
+          position: relative;
+          top: 20%;
+
         }
       }
   

@@ -6,6 +6,15 @@ import Scroll from './components/Scroll';
 import Competence from './components/Competence/Compétences';
 import Contact from './components/Contact/Contact';
 import Services from './components/Services/Services';
+import Marquee  from "./components/magicui/Marquee"
+
+
+
+
+
+
+
+
 
 const App = () => {
   return (
@@ -22,6 +31,9 @@ const App = () => {
       <section id="services">
         <Services />
       </section>
+     
+        <Marquee />
+      
       <Scroll />
       <section id="contact">
         <Contact />

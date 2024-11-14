@@ -62,13 +62,22 @@ const Hero = () => {
                  }}
             variants={textVariants}>Développeur Front-End : React, JavaScript, Next.js ... </motion.h1>
         </motion.div>
+        
+        <div className="scroll-img">
         <motion.img 
         variants={textVariants}
          animate="scrollButton" 
          
          src="/scroll.png" alt="" />
         </div>
-        <motion.div className="slidingTextContainer" variants={sliderVariants} initial="initial" animate="animate" >
+       
+        </div>
+        <motion.div 
+        className="slidingTextContainer" 
+        variants={sliderVariants} 
+        initial="initial" 
+        animate="animate" 
+        >
         Kayro Web
         </motion.div>
         <div className="imageContainer">
