@@ -3,25 +3,24 @@ import {  motion  } from 'framer-motion';
 import './Hero.scss';
 
 const textVariants = {
-    initial :{
-         x:-500,
-         opacity: 0,
+    initial: {
+        x: -500,
+        opacity: 0,
     },
     animate: {
-        x:0,
+        x: 0,
         opacity: 1,
-        transition:{
-            duration:1,
-            staggerChildren:0.1,
+        transition: {
+            duration: 1,
+            staggerChildren: 0.1,
         },
     },
-
     scrollButton: {
-        opacity: 0,
-        y:10,
-        transition:{
-            duration:2,
-            repeat:Infinity
+        y: [0, -10, 0],
+        opacity: [0.8, 1, 0.8],
+        transition: {
+            duration: 2,
+            repeat: Infinity,
         },
     },
 };
@@ -51,8 +50,8 @@ const Hero = () => {
         >
 
             <motion.h1 
-                 initial={{ backgroundPosition: "200% center" }}
-                 animate={{ backgroundPosition: "0% center" }}
+                initial={{ backgroundPosition: "200% center", rotate: -3 }}
+                animate={{ backgroundPosition: "0% center", rotate: 0 }}
                  transition={{ duration: 2, repeat: Infinity, repeatType: "reverse" }}
                  style={{
                    background: "linear-gradient(270deg, #59f1fb, #fee5f5)",
@@ -67,7 +66,7 @@ const Hero = () => {
         <motion.img 
         variants={textVariants}
          animate="scrollButton" 
-         
+        
          src="/scroll.png" alt="" />
         </div>
        
@@ -81,7 +80,9 @@ const Hero = () => {
         Kayro Web
         </motion.div>
         <div className="imageContainer">
-            <img src="" alt="" />
+            <img src="" alt=""
+            
+            />
             
         </div>
         </div>

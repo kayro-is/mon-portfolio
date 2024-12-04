@@ -42,8 +42,8 @@ const Services = () => {
       <motion.div className="titleContainer" variants={variants}>
         <div className="title">
           <motion.img 
-           whileHover={{ scale: 1.1, rotate: 5 }}
-           transition={{ type: "spring", stiffness: 300 }}
+            whileHover={{ scale: 1.1 }}
+            transition={{ duration: 0.3 }}
            src="/bg2.webp" alt="" />
           <motion.h1
             initial={{ backgroundPosition: "200% center" }}

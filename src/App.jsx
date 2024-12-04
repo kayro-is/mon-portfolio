@@ -1,4 +1,5 @@
-
+import "@fontsource/poppins"; // Poids par défaut
+import "@fontsource/poppins/400.css";
 import { SpeedInsights } from "@vercel/speed-insights/react"
 import NavBar from './components/NavBar/NavBar';
 import Hero from './components/Hero/Hero';

@@ -16,7 +16,7 @@ const ReviewCard = ({ name, username, body }) => (
       border: '1px solid #ddd',
       borderRadius: '12px',
       marginRight: '24px',
-      width: '1000px', // Augmenter la largeur
+      width: 'clamp(300px, 80%, 800px)', // Augmenter la largeur
       height: 'auto', // Augmenter la hauteur
       display: 'flex',
       flexDirection: 'column',
@@ -25,8 +25,11 @@ const ReviewCard = ({ name, username, body }) => (
       boxShadow: '0 4px 10px rgba(0, 0, 0, 0.1)',
       overflowWrap: 'break-word',
       whiteSpace: 'normal',
+      transition: 'transform 0.3s ease, box-shadow 0.3s ease',
      
     }}
+    onMouseEnter={(e) => (e.currentTarget.style.transform = 'scale(1.05)')}
+    onMouseLeave={(e) => (e.currentTarget.style.transform = 'scale(1)')}
   >
     <h3 style={{ fontSize: '2.5rem',color:'#9198e5', marginBottom: '8px' }}>{name}</h3>
     <span style={{ color: 'gray',color:'white', fontSize: '1.2rem' }}>{username}</span>
@@ -37,18 +40,17 @@ const ReviewCard = ({ name, username, body }) => (
 const Marquee = ({ reverse = false }) => {
   return (
     <div
-      className="marquee-container"
-      style={{
-        height: 'auto', // Augmenter la hauteur
-        overflow: 'hidden',
-        whiteSpace: 'nowrap',
-        display: 'flex',
-        alignItems: 'center',
-        padding: '20px 0',
-        backgroundColor: 'transparent', // Arrière-plan clair
-        overflowWrap: 'break-word',
-      }}
-    >
+    className="marquee-container"
+    style={{
+      height: "auto",
+      overflow: "hidden",
+      whiteSpace: "nowrap",
+      display: "flex",
+      alignItems: "center",
+      padding: "20px 0",
+      backgroundColor: "transparent",
+    }}
+  >
       <motion.div
         className="marquee-content"
         style={{

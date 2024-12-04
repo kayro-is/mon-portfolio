@@ -1,5 +1,5 @@
 import { useRef, useState } from "react";
-import { FaPhone, FaLinkedin, FaGithub,FaInstagram } from "react-icons/fa";
+import { FaPhone, FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa";
 import { BsTwitterX } from "react-icons/bs";
 import { CiMail } from "react-icons/ci";
 import emailjs from '@emailjs/browser';
@@ -13,24 +13,36 @@ const Contact = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
-
+  
+    console.log("Service ID :", 'service_l9vo5pm');
+    console.log("Template ID :", 'template_zu8ykz7');
+    console.log("Clé publique :", 'p3fnRyLtd6uJlmLTG');
+    console.log("formRef.current :", formRef.current);
+  
     emailjs
-    .sendForm('service_vruz4nc', 'template_3xtcdrg', formRef.current, {
-      publicKey: 'v6_1EsYtlteSGYYbv',
-    })
+      .sendForm(
+        'service_l9vo5pm',
+        'template_3xtcdrg',
+        formRef.current,
+        'p3fnRyLtd6uJlmLTG'
+      )
       .then(
-        () => { 
+        (result) => {
+          console.log("Message envoyé avec succès 👌 :", result.text);
           setSuccess(true);
           setError(false);
-          formRef.current.reset(); 
+          formRef.current.reset();
+          setTimeout(() => setSuccess(false), 3000);
         },
-        () => {
+        (error) => {
+          console.error("Erreur lors de l'envoi 😡 :", error.text || error);
           setError(true);
           setSuccess(false);
+          setTimeout(() => setError(false), 3000);
         }
       );
   };
-
+  
   return (
     <motion.div 
       className='contact' 
@@ -55,20 +67,20 @@ const Contact = () => {
             backgroundSize: "200% 200%",
           }}
         >Contact</motion.h1>
-      <div className="item">
-  <h2>Email</h2>
-  <span>
-    <CiMail className="icon-space"/>
-    <a href="mailto:mehadi.webdev@gmail.com">mehadi.webdev@gmail.com</a>
-  </span>
-</div>
-<div className="item">
-  <h2>Téléphone</h2>
-  <span>
-    <FaPhone className="icon-space" />
-    <a href="tel:+33664511131">06 64 51 11 31</a>
-  </span>
-</div>
+        <div className="item">
+          <h2>Email</h2>
+          <span>
+            <CiMail className="icon-space"/>
+            <a href="mailto:mehadi.webdev@gmail.com">mehadi.webdev@gmail.com</a>
+          </span>
+        </div>
+        <div className="item">
+          <h2>Téléphone</h2>
+          <span>
+            <FaPhone className="icon-space" />
+            <a href="tel:+33664511131">06 64 51 11 31</a>
+          </span>
+        </div>
         <div className="socialLinks">
           <motion.a href="https://www.linkedin.com/in/khireddine-mehadi-6447402a6/" target="_blank" rel="noopener noreferrer" whileHover={{ scale: 1.5 }} ><FaLinkedin /></motion.a>
           <motion.a href="https://github.com/kayro-is?tab=overview&from=2024-08-01&to=2024-08-12" target="_blank" rel="noopener noreferrer"whileHover={{ scale: 1.5 }}><FaGithub /></motion.a>

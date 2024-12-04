@@ -2,6 +2,12 @@
 import "./Competences.scss";
 import { motion } from "framer-motion";
 
+
+const defaultTransition = {
+  type: "spring",
+  stiffness: 200,
+  damping: 20,
+};
 const Competence = () => {
   
 
@@ -62,31 +68,32 @@ Je suis toujours ouvert aux collaborations enrichissantes et aux projets ambitie
         <motion.div className="logos" >
         
           <motion.img 
-          whileHover={{ scale: 1.2, rotate: 10 }}
+        whileHover={{ scale: 1.2, rotate: 10, filter: "drop-shadow(0px 0px 10px rgba(230, 100, 101, 0.8))" }}
           transition={{ type: "spring", stiffness: 300 }}
+          
            src="/html.webp"  alt="html5" />
           <motion.img 
-          whileHover={{ scale: 1.2, rotate: 10 }}
+         whileHover={{ scale: 1.2, rotate: 10,   filter: "drop-shadow(0px 4px 6px rgba(33, 150, 243, 0.5))"}}
           transition={{ type: "spring", stiffness: 300 }}
            src="/css.webp" alt="css" />
           <motion.img 
-          whileHover={{ scale: 1.2, rotate: 10 }}
+          whileHover={{ scale: 1.2, rotate: 10, filter: "drop-shadow(0px 4px 6px rgba(255, 230, 120, 0.5))" }}
           transition={{ type: "spring", stiffness: 300 }}
            src="/js.webp" alt="javascript" />
           <motion.img 
-          whileHover={{ scale: 1.2, rotate: 10 }}
+          whileHover={{ scale: 1.2, rotate: 10, filter: "drop-shadow(0px 4px 8px rgba(255, 255, 255, 0.6))" }}
           transition={{ type: "spring", stiffness: 300 }}
            src="vercel.webp" alt="vercel" />
           <motion.img 
-          whileHover={{ scale: 1.2, rotate: 10 }}
+          whileHover={{ scale: 1.2, rotate: 10, filter: "drop-shadow(0px 4px 6px rgba(33, 150, 243, 0.5)" }}
           transition={{ type: "spring", stiffness: 300 }}
            src="vscode.webp" alt="vscode" />
           <motion.img 
-          whileHover={{ scale: 1.2, rotate: 10 }}
+          whileHover={{ scale: 1.2, rotate: 10, filter: "drop-shadow(0px 4px 6px rgba(33, 150, 243, 0.5))" }}
           transition={{ type: "spring", stiffness: 300 }}
            src="react.webp" alt="react" />
           <motion.img 
-          whileHover={{ scale: 1.2, rotate: 10 }}
+          whileHover={{ scale: 1.2, rotate: 10, filter: "drop-shadow(0px 4px 8px rgba(255, 255, 255, 1))" }}
           transition={{ type: "spring", stiffness: 300 }}
            src="/next.webp" alt="next" />
         </motion.div>
